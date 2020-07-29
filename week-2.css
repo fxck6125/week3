@@ -223,7 +223,7 @@ nav {
 }
 /*select*/
 .select {
-  width: 300px;
+  width: 100%;
   text-align: center;
   font-size: 24px;
   line-height: 40px;
@@ -236,10 +236,11 @@ nav {
   color: white;
 }
 .select li {
-  width: 300px;
-  height: 65px;
   border:solid 1px #EAF0ED;
-  padding: 16px 0px;
+}
+.select a{
+  display: block;
+   padding: 16px 0px;
 }
 /*card*/
 .dessert-cards {
@@ -266,7 +267,7 @@ nav {
   background-color: #3f5d45;
 }
 .dessert-cards img {
-  width: 20px;
+  max-width: 20px;
   height: 20px;
   margin-top: 19px;
   margin-right: 22px;
@@ -311,7 +312,7 @@ nav {
   border:  1px solid #EAF0ED;
 }
 .pages img{
-  width: 24px;
+  max-width: 24px;
   height: 24px;
 }
 
@@ -322,7 +323,7 @@ nav {
   align-items:center;
   background-color:#3F5D45;
   margin:60px auto 0px;
-  padding:30px 122px;
+  padding:30px 250px;
   justify-content:space-between;
 }
 .subscribe p{
@@ -372,12 +373,10 @@ nav {
   flex-flow: row wrap;
   justify-content:space-between;
   background-color:#EAF0ED;
-  padding:0px;
+  padding:0px 250px 0px;
   margin:0px auto;
 }
-.footer-left{
-  margin-left:122px;
-}
+
 .footer-left img{
   width:200px;
   margin:41px 0px 115.5px;
@@ -400,9 +399,6 @@ nav {
   margin:0px; /*清掉才不會下方留白!*/
 }
 /*footer-right*/
-.footer-right{
-  padding-right:122px;  
-}
 .vertical-mode {
   writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;   
@@ -412,7 +408,6 @@ nav {
   line-height:36px;
   font-weight: bold;
   margin:30px 0px 20px auto;
-  padding-right:0px;
 }
 /*hide-nav*/
 .hide-nav {
